@@ -20,12 +20,16 @@ const ScssMain = () => {
                 alt='LocationImage'
                 className={Style.locationLogo}
               />
-              <div className={Style.p1A}>
-                <p className={Style.P1}>{item.location}</p>
-                <a href={item.googleMapsUrl} className={Style.Ahref}>
-                  View on Google Maps
-                </a>
-              </div>
+              <span className={Style.p1A}>
+                <span className={Style.P1}>
+                  {item.location.substring(0, 12)}
+                </span>
+                <span>
+                  <a href={item.googleMapsUrl} className={Style.Ahref}>
+                    View on Google Maps
+                  </a>
+                </span>
+              </span>
             </div>
             <div className={Style.secondSec}>
               <h2>{item.title}</h2>

@@ -21,9 +21,7 @@ const ScssMain = () => {
                 className={Style.locationLogo}
               />
               <span className={Style.p1A}>
-                <span className={Style.P1}>
-                  {item.location.substring(0, 12)}
-                </span>
+                <span className={Style.P1}>{item.location}</span>
                 <span>
                   <a href={item.googleMapsUrl} className={Style.Ahref}>
                     View on Google Maps
